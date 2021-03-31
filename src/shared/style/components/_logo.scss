@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+
+  > svg #Group {
+    fill: var(--logo-color);
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+
+}

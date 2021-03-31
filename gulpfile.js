@@ -107,7 +107,7 @@ const browser = () => {
   watch("./src/pages/landing/*.html", series(copyIndexHTML));
   watch("./src/pages/**/*.html", series(copyHTMLPages));
   watch("./src/assets/**", series(copyAssets));
-  watch("./src/style/**/*.*", series(transpilerScssToCss));
+  watch("./src/**/*.*", series(transpilerScssToCss));
   // watch("./src/js/**/*.js", series(buildJS));
 }
 

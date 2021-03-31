@@ -1,0 +1,17 @@
+@import "nav-panel";
+@import "../../../style/abstracts/variables";
+
+.page-header {
+  width: 100%;
+  background-color: var(--bg);
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin: 2.8rem 0;
+  }
+}
+

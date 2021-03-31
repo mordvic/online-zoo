@@ -1,0 +1,46 @@
+.nav-panel {
+  display: flex;
+  align-items: center;
+  width: 57.3rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: .8rem 0 0 0;
+
+  &__item {
+    list-style: none;
+
+    & > a {
+      font-size: 1.6rem;
+      line-height: 1.875rem;
+      letter-spacing: .01rem;
+      text-decoration: none;
+      color: var( --nav-color);
+    }
+
+    & > a[href]:hover::after {
+      content: "";
+      display: flex;
+      width: 110%;
+      margin-bottom: -2px;
+      border-bottom: 1px solid var( --nav-color);
+    }
+
+    & > a[href]:active {
+      opacity: .5;
+    }
+
+    & > a:not([href])::after {
+      content: "";
+      display: flex;
+      width: 110%;
+      margin-top: 2px;
+      border-bottom: 1px solid var( --nav-color);
+      cursor: default;
+    }
+  }
+}

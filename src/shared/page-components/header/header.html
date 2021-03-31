@@ -1,6 +1,6 @@
 <header class="page-header">
-  <div class="container">
-    <a href="#" class="logo">
+  <div class="container page-header__container">
+    <a href="#" class="logo page-header__logo">
       <svg width="57px" height="38px" viewBox="0 0 57 38" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Group" fill="#333333" fill-rule="nonzero">
@@ -13,19 +13,23 @@
           </g>
         </g>
       </svg>
+      <h1 class="visually-hidden">zoo online</h1>
     </a>
     <nav class="nav-panel">
       <ul class="nav-list">
-        <li class="nav-list__item"><a href="#">About</a></li>
+        <li class="nav-list__item"><a>About</a></li>
         <li class="nav-list__item"><a href="#">Zoos</a></li>
         <li class="nav-list__item"><a href="#">Map</a></li>
         <li class="nav-list__item"><a href="#">Contact Us</a></li>
-        <li class="nav-list__item"><a href="#">Design</a></li>
+        <li class="nav-list__item"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
       </ul>
     </nav>
-    <div class="night-mode-toggle">
-      <label class="visual-hidden" for="night-mode">Night Mode</label>
-      <input type="checkbox" id="night-mode">
+    <div class="night-mode">
+      <label>
+        <span class="visually-hidden">Dark Mode</span>
+        <input class="night-mode__checkbox" type="checkbox">
+        <span class="night-mode__custom-checkbox"></span>
+      </label>
     </div>
   </div>
 </header>

@@ -5,13 +5,28 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="shared/style/main.css">
+  <link rel="stylesheet" href="pages/landing/style/landing.css">
+  <link rel="stylesheet" href="shared/page-components/header/style/header.css">
+  <title>Online-zoo</title>
 </head>
 <body>
 
 @@include('../../shared/page-components/header/header.html')
 
 @@include('../../shared/page-components/footer/footer.html')
+
+<script>
+  let darkModeCheckbox = document.querySelector(".night-mode__checkbox");
+
+  darkModeCheckbox.addEventListener('click', e => {
+    if (darkModeCheckbox.checked) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })
+</script>
 
 </body>
 </html>
