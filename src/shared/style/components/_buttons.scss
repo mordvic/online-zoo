@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+
+.btn {
+  width: 24.5rem;
+  padding: 1.7rem 0 1.7rem 7.6rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  color: $btn-color-text;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  cursor: pointer;
+  outline: transparent;
+
+  &:hover {
+    background: linear-gradient(106.89deg, #39a98d -14.32%, #38a8ae 100.68%);
+  }
+
+  &:active {
+    background: linear-gradient(106.89deg, #2f8a74 -14.32%, #2f8288 100.68%);
+  }
+
+  &--play {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1.15rem;
+      left: 4rem;
+      display: block;
+      width: 3.2rem;
+      height: 3.2rem;
+      background: url("../../../assets/images/play.png");
+    }
+  }
+}
