@@ -1,0 +1,59 @@
+.range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.range__output {
+  margin-bottom: .8rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var( --range-current-value-color)
+}
+
+.range__current-value {
+  position: relative;
+  left: .5rem;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.range__max-value {
+  position: relative;
+  right: .5rem;
+  font-size: 1.4rem;
+  line-height: 1.64rem;
+  color: grey;
+}
+
+.range__input[type=range] {
+  -webkit-appearance: none;
+  width: 24.5rem;
+}
+
+.range__input[type=range]:focus {
+  outline: none;
+}
+
+.range__input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: .5rem;
+  cursor: pointer;
+  background: rgba(189, 189, 189, 0.57);
+}
+
+.range__input[type=range]::-webkit-slider-thumb {
+  position: relative;
+  top: -2.55px;
+  height: 1rem;
+  width: 6.2rem;
+  background: var(--range-color);
+  cursor: pointer;
+  -webkit-appearance: none;
+
+}
+
+.range__input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(189, 189, 189, 0.57);
+}

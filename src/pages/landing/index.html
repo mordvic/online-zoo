@@ -21,14 +21,14 @@
       <button class="btn btn--play favorite-animal__btn">
         Watch online
       </button>
-<!--      <div class="favorite-animal__slider">-->
-<!--        <div class="gallery-slider">-->
-<!--          <div class="gallery-slider__content">-->
-<!--            <span class="line"></span>-->
-<!--          </div>-->
-<!--          <input class="gallery-slider__control" type="range" min="0" max="8" value="2" step="1">-->
-<!--        </div>-->
-<!--      </div>-->
+      <!--      <div class="favorite-animal__slider">-->
+      <!--        <div class="gallery-slider">-->
+      <!--          <div class="gallery-slider__content">-->
+      <!--            <span class="line"></span>-->
+      <!--          </div>-->
+      <!--          <input class="gallery-slider__control" type="range" min="0" max="8" value="2" step="1">-->
+      <!--        </div>-->
+      <!--      </div>-->
       <ul class="social-networks favorite-animal__social-networks">
         <li>
           <a href="#">
@@ -61,6 +61,32 @@
       </ul>
     </div>
   </section>
+  <section class="description">
+    <div class="container description__container">
+      <h3 class="description__title">How it works?</h3>
+      <p class="description__text">
+        As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species
+        and their habitat, and we are determined to assist in all aspects, including providing veterinary support and
+        raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a
+        priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the
+        resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are
+        devastated by the impact of the 2020 Australian bushfires on precious species and their habitat
+      </p>
+      <div class="image-slider description__image-slider">
+        <div class="image-slider__content">
+          <img src="assets/images/long-slider/caribou.jpg" alt="caribou">
+        </div>
+        <div class="range">
+          <div class="range__output"><span class="range__current-value">01</span> / <span class="range__max-value">04</span></div>
+          <label>
+            <input class="range__input" type="range" min="1" max="4" value="0" step="1">
+          </label>
+        </div>
+      </div>
+      <button class="btn btn--play description__btn">Watch online</button>
+    </div>
+  </section>
+
 </main>
 
 @@include('../../shared/page-components/footer/footer.html')
@@ -75,6 +101,14 @@
       document.documentElement.setAttribute("data-theme", "light");
     }
   })
+
+  let rangeVal = document.querySelector(".description .range__input");
+  let currentRangeValue = document.querySelector(".description .range__current-value");
+
+  rangeVal.addEventListener('click', e => {
+    currentRangeValue.innerHTML = `0${e.target.value}`;
+  })
+
 </script>
 
 </body>

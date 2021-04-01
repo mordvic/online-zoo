@@ -1,3 +1,5 @@
+@import "../abstracts/variables";
+
 @font-face {
   font-family: "Roboto-Medium";
   src: url("../../../assets/fonts/Roboto-Medium.ttf")  format("truetype")
@@ -8,4 +10,20 @@ h2 {
   font-size: 8.9rem;
   line-height: 10.4rem;
   letter-spacing: .05rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 4.8rem;
+  line-height: 5.625rem;
+  font-weight: $font-weight-bold;
+  color: var(--section-header-color);
+}
+
+p {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.641rem;
+  font-weight: $font-weight-normal;
+  color: var(--text-color);
 }

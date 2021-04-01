@@ -13,12 +13,24 @@
 
 html {
   --bg: #ffffff;
+  --section-header-color: #333333;
+  --text-color: #4f4f4f;
+
+  --range-color: #333333;
+  --range-current-value-color: #33333;
+
   --logo-color: #333333;
   --nav-color: #333333;
 }
 
 html[data-theme="dark"] {
   --bg: #333333;
+  --section-header-color: #fefefe;
+  --text-color: #f2f2f2;
+
+  --range-color: #fefefe;
+  --range-current-value-color: #fefefe;
+
   --logo-color: #ffffff;
   --nav-color: #fefefe;
 }
@@ -46,6 +58,7 @@ body {
 
 .container {
   display: flex;
-  width: 162rem;
+  width: 192rem;
+  padding: 0 15rem;
   margin: 0 auto;
 }

@@ -4,6 +4,7 @@
   width: 100%;
 }
 
+//----favorite-animal section
 .favorite-animal {
   background: url("../../../assets/images/bg-fav-animal.jpg");
   background-size: cover;
@@ -11,7 +12,7 @@
   &__container {
     position: relative;
     flex-direction: column;
-    padding: 20.6rem 60rem 43.3rem 21rem;
+    padding: 20.6rem 60rem 43.3rem 36rem;
   }
 
   &__title {
@@ -31,7 +32,7 @@
   &__social-networks {
     position: absolute;
     bottom: 11.1rem;
-    left: 0;
+    left: 15rem;
   }
 }
 
@@ -58,5 +59,34 @@
 
   &__icons:active {
     fill: #2f8a74;
+  }
+}
+
+//------description-section
+.description {
+  background: var(--bg);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 79rem;
+    padding: 10rem 0;
+  }
+
+  &__title{
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+    letter-spacing: -.006rem;
+  }
+
+  &__image-slider {
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    align-self: center;
   }
 }
