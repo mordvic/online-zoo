@@ -1,8 +1,17 @@
 @import "../abstracts/variables";
 
 @font-face {
-  font-family: "Roboto-Medium";
-  src: url("../../../assets/fonts/Roboto-Medium.ttf")  format("truetype")
+  font-family: "Roboto";
+  src: url("../../../assets/fonts/Roboto-Regular.ttf")  format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../assets/fonts/Roboto-Bold.ttf")  format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 h2 {
@@ -20,10 +29,18 @@ h3 {
   color: var(--section-header-color);
 }
 
+h4 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 2.34rem;
+  font-weight: $font-weight-bold;
+  color: var(--section-header-color);
+}
+
 p {
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.641rem;
-  font-weight: $font-weight-normal;
+  font-weight: normal;
   color: var(--text-color);
 }

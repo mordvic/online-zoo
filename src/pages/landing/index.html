@@ -32,28 +32,28 @@
       <ul class="social-networks favorite-animal__social-networks">
         <li>
           <a href="#">
-            <svg class="social-networks__icons" class="logo__icon" width="20" height="20">
+            <svg class="social-networks__icons" width="20" height="20">
               <use xlink:href="assets/icons/sprite.svg#instagram-icon"></use>
             </svg>
           </a>
         </li>
         <li>
           <a href="#">
-            <svg class="social-networks__icons" class="logo__icon" width="20" height="17">
+            <svg class="social-networks__icons" width="20" height="17">
               <use xlink:href="assets/icons/sprite.svg#twitter-icon"></use>
             </svg>
           </a>
         </li>
         <li>
           <a href="#">
-            <svg class="social-networks__icons" class="logo__icon" width="20" height="14">
+            <svg class="social-networks__icons" width="20" height="14">
               <use xlink:href="assets/icons/sprite.svg#youtube-icon"></use>
             </svg>
           </a>
         </li>
         <li>
           <a href="#">
-            <svg class="social-networks__icons" class="logo__icon" width="20" height="12">
+            <svg class="social-networks__icons" width="20" height="12">
               <use xlink:href="assets/icons/sprite.svg#vk-icon"></use>
             </svg>
           </a>
@@ -61,6 +61,7 @@
       </ul>
     </div>
   </section>
+
   <section class="description">
     <div class="container description__container">
       <h3 class="description__title">How it works?</h3>
@@ -77,9 +78,10 @@
           <img src="assets/images/long-slider/caribou.jpg" alt="caribou">
         </div>
         <div class="range">
-          <div class="range__output"><span class="range__current-value">01</span> / <span class="range__max-value">04</span></div>
+          <div class="range__output"><span class="range__current-value">01</span> / <span
+            class="range__max-value">04</span></div>
           <label>
-            <input class="range__input" type="range" min="1" max="4" value="0" step="1">
+            <input class="range__input" type="range" min="1" max="4" value="1" step="1">
           </label>
         </div>
       </div>
@@ -87,6 +89,87 @@
     </div>
   </section>
 
+  <section class="inspiring">
+    <div class="container inspiring__container">
+      <ul class="inspiring__list">
+        <li class="inspiring__item">
+          <img class="inspiring__image" src="assets/images/inspire.png" alt="believe" width="80" height="80">
+          <h4 class="inspiring__title">What inspires us?</h4>
+          <p class="inspiring__text">
+            As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious
+            species and their habitat, and we are determined to assist in all aspects.
+          </p>
+        </li>
+        <li class="inspiring__item">
+          <img class="inspiring__image" src="assets/images/mission.png" alt="inspire" width="80" height="80">
+          <h4 class="inspiring__title">Our mission</h4>
+          <p class="inspiring__text">
+            Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives.
+          </p>
+        </li>
+        <li class="inspiring__item">
+          <img class="inspiring__image" src="assets/images/believe.png" alt="mission" width="80" height="80">
+          <h4 class="inspiring__title">What we believe in?</h4>
+          <p class="inspiring__text">
+            Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet,
+            and deserve a life of dignity and compassion.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pets-zoo">
+    <div class="container pets-zoo__container">
+      <h3 class="pets-zoo__title">Pets in Zoo</h3>
+      <div class="zoo-slider pets-zoo__zoo-slider">
+        <div class="zoo-slider__wrapper">
+          <button class="btn-arrow zoo-slider__arrow-left">
+            <svg width="30" height="30">
+              <use xlink:href="assets/icons/sprite.svg#left-arrow-icon"></use>
+            </svg>
+          </button>
+          <button class="btn-arrow zoo-slider__arrow-right">
+            <svg width="30" height="30">
+              <use xlink:href="assets/icons/sprite.svg#right-arrow-icon"></use>
+            </svg>
+          </button>
+          <div class="zoo-slider__slides">
+            <div class="pet-slide">
+              <img src="assets/images/pets/panda.jpg" alt="panda" width="278" height="399">
+              <div class="pet-slide__wrapper">
+                <p class="pet-slide__description">
+                  Panda’s name is Bei Bei. He
+                  is 2 years old. Bei Bei is from China. He loves bamboos.
+                </p>
+                <div class="pet-slide__btn-wrapper">
+                  <a class="pet-slide__watch" href="#">Watch online</a>
+                  <button class="btn btn--donate pet-slide__donate">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="pet-slide">
+              <img src="assets/images/pets/hawk.jpg" alt="hawk" width="278" height="399">
+            </div>
+            <div class="pet-slide">
+              <img src="assets/images/pets/gorilla.jpg" alt="gorilla" width="278" height="399">
+            </div>
+            <div class="pet-slide">
+              <img src="assets/images/pets/crocodile.jpg" alt="crocodile" width="278" height="399">
+            </div>
+          </div>
+        </div>
+        <div class="range pets-zoo__range">
+          <div class="range__output"><span class="range__current-value">01</span> / <span
+            class="range__max-value">04</span></div>
+          <label>
+            <input class="range__input" type="range" min="1" max="8" value="1" step="1">
+          </label>
+        </div>
+      </div>
+      <button class="btn">Choose your favorite</button>
+    </div>
+  </section>
 </main>
 
 @@include('../../shared/page-components/footer/footer.html')

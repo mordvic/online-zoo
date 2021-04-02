@@ -1,92 +1,9 @@
 @import "../../../shared/style/abstracts/variables";
+@import "favorite-animal";
+@import "description-section";
+@import "inspiring-section";
+@import "pets-zoo-section";
 
 .main-page {
   width: 100%;
-}
-
-//----favorite-animal section
-.favorite-animal {
-  background: url("../../../assets/images/bg-fav-animal.jpg");
-  background-size: cover;
-
-  &__container {
-    position: relative;
-    flex-direction: column;
-    padding: 20.6rem 60rem 43.3rem 36rem;
-  }
-
-  &__title {
-    color: $text-color-white;
-  }
-
-  &__btn {
-    margin-top: 3.7rem;
-  }
-
-  &__slider {
-    position: absolute;
-    right: 0;
-    bottom: 11.3rem;
-  }
-
-  &__social-networks {
-    position: absolute;
-    bottom: 11.1rem;
-    left: 15rem;
-  }
-}
-
-.social-networks {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 10.7rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  a {
-    display: flex;
-  }
-
-  &__icons {
-    fill: #fefefe;
-  }
-
-  &__icons:hover {
-    fill: #39a98d;
-  }
-
-  &__icons:active {
-    fill: #2f8a74;
-  }
-}
-
-//------description-section
-.description {
-  background: var(--bg);
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    width: 79rem;
-    padding: 10rem 0;
-  }
-
-  &__title{
-    margin-bottom: 3rem;
-  }
-
-  &__text {
-    margin-bottom: 3rem;
-    letter-spacing: -.006rem;
-  }
-
-  &__image-slider {
-    margin-bottom: 3rem;
-  }
-
-  &__btn {
-    align-self: center;
-  }
 }

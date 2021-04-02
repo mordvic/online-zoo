@@ -1,0 +1,26 @@
+.description {
+  background: var(--bg);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 79rem;
+    padding: 10rem 0;
+  }
+
+  &__title{
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+  }
+
+  &__image-slider {
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}
