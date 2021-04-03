@@ -7,7 +7,7 @@
   font-size: 1.8rem;
   line-height: 2.1rem;
   font-weight: 900;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: $btn-color-text;
   border: none;
@@ -26,7 +26,7 @@
 
   &--play {
     position: relative;
-    padding: 1.7rem 0 1.7rem 7.6rem;
+    padding: 1.7rem 0 1.7rem 3.6rem;
 
     &::after {
       content: "";

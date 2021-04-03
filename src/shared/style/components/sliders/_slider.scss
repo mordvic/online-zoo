@@ -1,0 +1,158 @@
+.slider {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__control {
+    padding: 0;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    outline: transparent;
+    fill: var(--slider-control-color);
+
+    &--left {
+      order: 1;
+    }
+
+    &--right {
+      order: 3;
+    }
+
+    &:hover {
+      fill: #828282;
+    }
+
+    &:active {
+      fill: #999999;
+    }
+  }
+
+  &--testimonials {
+    width: 130rem;
+
+    .slider__wrapper {
+      margin-bottom: 1.8rem;
+    }
+
+    .slides {
+      width: 120rem;
+    }
+
+    .slide {
+      align-items: center;
+      width: 58.5rem;
+      padding: 5.7rem 7.3rem 10.6rem 7.3rem;
+      background-color: var(--slider-bg-color);
+      box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+
+      &__user-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.8rem;
+        height: 6.8rem;
+        margin-bottom: 1.7rem;
+        border: 1px solid #bdbdbd;
+        border-radius: 50%;
+      }
+
+      &__user-comment {
+        margin-top: 1.7rem;
+      }
+
+    }
+  }
+
+  &--zoo {
+    width: 130rem;
+
+    .slides {
+      width: 120rem;
+    }
+
+    .slide {
+      position: relative;
+      display: flex;
+      border-radius: .5rem;
+      cursor: pointer;
+      overflow: hidden;
+
+      &__wrapper {
+        position: absolute;
+        bottom: -10rem;
+        padding: 0 2.2rem;
+        transition: all 500ms ease-in;
+      }
+
+      &__description {
+        padding-right: 5rem;
+        margin-bottom: 1.5rem;
+        color: #fefefe;
+      }
+
+      &__btn-wrapper {
+        display: flex;
+      }
+
+      &__watch {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 11.3rem;
+        margin-right: 1rem;
+        padding: .6rem 0 .4rem 2.6rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        text-decoration: transparent;
+        text-transform: uppercase;
+        color: #4BD8B5;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 2.4rem;
+          height: 2.4rem;
+          background: url("../../../../assets/icons/play-green.svg");;
+        }
+
+        &:hover {
+          opacity: .8;
+        }
+
+        &:active {
+          opacity: .5;
+        }
+      }
+
+      &:hover {
+        .slide__wrapper {
+          position: absolute;
+          bottom: 4.4rem;
+          padding: 0 2.2rem;
+        }
+      }
+    }
+  }
+
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between;
+  order: 2;
+  margin-bottom: 3rem;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+}

@@ -20,6 +20,9 @@ html {
   --range-color: #333333;
   --range-current-value-color: #33333;
 
+  --slider-control-color: #333333;
+  --slider-bg-color: #fefefe;
+
   --logo-color: #333333;
   --nav-color: #333333;
 }
@@ -32,6 +35,9 @@ html[data-theme="dark"] {
 
   --range-color: #fefefe;
   --range-current-value-color: #fefefe;
+
+  --slider-control-color: #ffffff;
+  --slider-bg-color: #3c3c3c;
 
   --logo-color: #ffffff;
   --nav-color: #fefefe;

@@ -73,8 +73,8 @@
         resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are
         devastated by the impact of the 2020 Australian bushfires on precious species and their habitat
       </p>
-      <div class="image-slider description__image-slider">
-        <div class="image-slider__content">
+      <div class="slider description__image-slider">
+        <div class="slides">
           <img src="assets/images/long-slider/caribou.jpg" alt="caribou">
         </div>
         <div class="range">
@@ -122,39 +122,39 @@
   <section class="pets-zoo">
     <div class="container pets-zoo__container">
       <h3 class="pets-zoo__title">Pets in Zoo</h3>
-      <div class="zoo-slider pets-zoo__zoo-slider">
-        <div class="zoo-slider__wrapper">
-          <button class="btn-arrow zoo-slider__arrow-left">
+      <div class="slider slider--zoo pets-zoo__zoo-slider">
+        <div class="slider__wrapper">
+          <button class="slider__control slider__control--left">
             <svg width="30" height="30">
               <use xlink:href="assets/icons/sprite.svg#left-arrow-icon"></use>
             </svg>
           </button>
-          <button class="btn-arrow zoo-slider__arrow-right">
+          <button class="slider__control slider__control--right">
             <svg width="30" height="30">
               <use xlink:href="assets/icons/sprite.svg#right-arrow-icon"></use>
             </svg>
           </button>
-          <div class="zoo-slider__slides">
-            <div class="pet-slide">
+          <div class="slides">
+            <div class="slide">
               <img src="assets/images/pets/panda.jpg" alt="panda" width="278" height="399">
-              <div class="pet-slide__wrapper">
-                <p class="pet-slide__description">
+              <div class="slide__wrapper">
+                <p class="slide__description">
                   Panda’s name is Bei Bei. He
                   is 2 years old. Bei Bei is from China. He loves bamboos.
                 </p>
-                <div class="pet-slide__btn-wrapper">
-                  <a class="pet-slide__watch" href="#">Watch online</a>
-                  <button class="btn btn--donate pet-slide__donate">Donate</button>
+                <div class="slide__btn-wrapper">
+                  <a class="slide__watch" href="#">Watch online</a>
+                  <button class="btn btn--donate slide__donate">Donate</button>
                 </div>
               </div>
             </div>
-            <div class="pet-slide">
+            <div class="slide">
               <img src="assets/images/pets/hawk.jpg" alt="hawk" width="278" height="399">
             </div>
-            <div class="pet-slide">
+            <div class="slide">
               <img src="assets/images/pets/gorilla.jpg" alt="gorilla" width="278" height="399">
             </div>
-            <div class="pet-slide">
+            <div class="slide">
               <img src="assets/images/pets/crocodile.jpg" alt="crocodile" width="278" height="399">
             </div>
           </div>
@@ -168,6 +168,77 @@
         </div>
       </div>
       <button class="btn">Choose your favorite</button>
+    </div>
+  </section>
+  <section class="pay-feed">
+    <div class="container pay-feed__container">
+      <h3 class="pay-feed__title">Pay and feed</h3>
+      <p class="pay-feed__text">
+        The opportunity to easily and naturally (but as often as possible) donate to the needs
+        of animals that you like.
+      </p>
+      <ul class="pay-feed__road">
+        <li class="pay-feed__road-item pay-feed__road-item--visa">
+          <h4 class="pay-feed__road-name">You pay with a VISA card</h4>
+        </li>
+        <li class="pay-feed__road-item pay-feed__road-item--zoo">
+          <h4 class="pay-feed__road-name">Payment goes to the Zoo</h4>
+        </li>
+        <li class="pay-feed__road-item pay-feed__road-item--panda">
+          <h4 class="pay-feed__road-name">Panda gets the bamboo</h4>
+        </li>
+      </ul>
+      <button class="btn">Donate</button>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container testimonials__container">
+      <h3 class="testimonials__title">Testimonials</h3>
+      <div class="slider slider--testimonials testimonials__slider">
+        <div class="slider__wrapper">
+          <button class="slider__control slider__control--left">
+            <svg width="30" height="30">
+              <use xlink:href="assets/icons/sprite.svg#left-arrow-icon"></use>
+            </svg>
+          </button>
+          <button class="slider__control slider__control--right">
+            <svg width="30" height="30">
+              <use xlink:href="assets/icons/sprite.svg#right-arrow-icon"></use>
+            </svg>
+          </button>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide__user-avatar">
+                <img src="../../assets/images/users/user.png" alt="Nastya Sidorova" width="48" height="48">
+              </div>
+              <h4 class="slide__user-name">Nastya Sidorova</h4>
+              <p class="slide__user-comment">
+                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious
+                species and their habitat.
+              </p>
+            </div>
+            <div class="slide">
+              <div class="slide__user-avatar">
+                <img src="../../assets/images/users/vladkim.png" alt="Vlad Kim" width="68" height="68">
+              </div>
+              <h4 class="slide__user-name">Vlad Kim</h4>
+              <p class="slide__user-comment">
+                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious
+                species and their habitat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="range">
+          <div class="range__output"><span class="range__current-value">01</span> / <span
+            class="range__max-value">08</span></div>
+          <label>
+            <input class="range__input" type="range" min="1" max="8" value="1" step="1">
+          </label>
+        </div>
+      </div>
+      <button class="btn">Leave feedback</button>
     </div>
   </section>
 </main>

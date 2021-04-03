@@ -1,0 +1,116 @@
+.pay-feed {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-section-color);
+  z-index: 1;
+
+  &__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    margin-bottom: 9.2rem;
+  }
+
+  &__road {
+    display: flex;
+    justify-content: space-between;
+    width: 120.4rem;
+    margin: 0 0 6rem 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__road-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 24.5rem;
+    height: 24.5rem;
+    padding: 8rem 5.3rem;
+    text-align: center;
+    color: #FFF;
+    background: var(--bg-section-color);
+    background-clip: padding-box;
+    border: solid 4px transparent;
+    border-radius: 50%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -4px;
+      border-radius: inherit;
+      background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+      border: 4px solid transparent;
+    }
+
+    &--visa .pay-feed__road-name {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 6.5rem;
+        left: 8.5rem;
+        display: flex;
+        width: 6.5rem;
+        height: 5.3rem;
+        background: url("../../../assets/images/visa.png");
+      }
+    }
+
+      &--zoo .pay-feed__road-name {
+        &:before{
+          content: "";
+          position: absolute;
+          top: 6rem;
+          left: 8.5rem;
+          display: flex;
+          width: 6rem;
+          height: 6rem;
+          background: url("../../../assets/images/zoo.png");
+        }
+    }
+
+    &--panda .pay-feed__road-name {
+      &:before{
+        content: "";
+        position: absolute;
+        top: 6.2rem;
+        left: 8rem;
+        display: flex;
+        width: 7rem;
+        height: 5.6rem;
+        background: url("../../../assets/images/panda.png");
+      }
+    }
+  }
+
+  .pay-feed__road-name {
+    margin-top: 8rem;
+  }
+
+  &__road-item + &__road-item {
+    &:after{
+      content: "";
+      position: absolute;
+      top: 11rem;
+      left: -17.7rem;
+      width: 10.8rem;
+      height: 1.6rem;
+      background: url("../../../assets/images/arrow.png");
+    }
+  }
+
+}
