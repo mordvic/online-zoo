@@ -3,12 +3,17 @@
 @import "base/base";
 
 @import "components/logo";
+@import "components/nav-panel";
 
-@import "components/forms/dark-mode-checkbox";
-@import "components/imputs/buttons";
-@import "components/imputs/range";
+@import "components/forms/contacts-form";
 
-@import "components/sliders/gallery-slider";
+@import "components/forms/inputs";
+@import "components/forms/textarea";
+@import "components/forms/checkbox";
+
+@import "components/inputs/buttons";
+@import "components/inputs/range";
+
 @import "components/sliders/slider";
 
 @import "components/world-map";

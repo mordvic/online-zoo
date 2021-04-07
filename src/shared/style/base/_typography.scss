@@ -45,6 +45,14 @@ h5 {
   color: var(--section-header-color);
 }
 
+h6 {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.64rem;
+  font-weight: 700;
+  color: $text-header-white-color;
+}
+
 p {
   margin: 0;
   font-size: 1.4rem;

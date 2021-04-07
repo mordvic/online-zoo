@@ -1,0 +1,29 @@
+@import "../../abstracts/variables";
+
+.standard-input {
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    border-bottom: 1px solid $form-border-color;
+    -webkit-text-fill-color: $form-text-color;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 0 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.65rem;
+    color: $form-text-color;
+    border: none;
+    border-bottom: 1px solid $form-border-color;
+    background-color: $form-bg-color;
+    outline: transparent;
+  }
+
+  input::placeholder {
+    color: $form-placeholder-color;
+  }
+
+}

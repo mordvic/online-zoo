@@ -1,0 +1,93 @@
+@import "../../abstracts/variables";
+
+.standard-checkbox {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  letter-spacing: .09rem;
+  color: #bdbdbd;
+
+  &__input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  &__checkmark {
+    position: relative;
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: .6rem;
+    border: 1px solid $form-border-color;
+    cursor: pointer;
+    outline: transparent;
+  }
+
+  &__input:checked + &__checkmark:after,
+  &__input:checked + &__checkmark:before {
+    content: "";
+    position: absolute;
+    top: .5rem;
+    left: .05rem;
+    width: 1rem;
+    height: .2rem;
+    background-color: $form-checkbox-color;
+  }
+
+  &__input:checked + &__checkmark:after {
+    transform: rotate(45deg);
+  }
+
+  &__input:checked + &__checkmark:before {
+    transform: rotate(-45deg);
+  }
+}
+
+.night-mode {
+
+  &__input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  &__input:checked + &__checkmark {
+    background: #4f4f4f;
+  }
+
+  &__input:checked + &__checkmark:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: #1B1B1B;
+  }
+
+  &__checkmark:active:after {
+    width: 45px;
+  }
+
+  &__checkmark {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: #f2f2f2;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  &__checkmark:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 90px;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    transition: 0.3s;
+  }
+}
+

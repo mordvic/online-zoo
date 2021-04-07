@@ -14,10 +14,10 @@ const browserReload = () => {
   return browserSync.reload();
 }
 
-// const cleanHtml = (done) => {
-//   del("./dist/*.html");
-//   done();
-// }
+const cleanHtml = (done) => {
+  del("./dist/");
+  done();
+}
 
 const copyIndexHTML = () => {
   return src("src/pages/landing/*.html")
@@ -104,12 +104,12 @@ const browser = () => {
     }
   });
 
-  watch("./src/pages/landing/*.html", series(copyIndexHTML));
-  watch("./src/pages/**/*.html", series(copyHTMLPages));
+  watch("./src/pages/landing/*.html", parallel (cleanHtml ,copyIndexHTML));
+  watch("./src/pages/**/*.html", parallel(cleanHtml ,copyHTMLPages));
   watch("./src/assets/**", series(copyAssets));
   watch("./src/**/*.*", series(transpilerScssToCss));
   // watch("./src/js/**/*.js", series(buildJS));
 }
 
-exports.default = series(copyIndexHTML, copyHTMLPages, transpilerScssToCss, copyAssets, browser);
+exports.default = parallel (copyIndexHTML, copyHTMLPages, transpilerScssToCss, copyAssets, browser);
 

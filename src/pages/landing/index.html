@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="shared/style/main.css">
   <link rel="stylesheet" href="pages/landing/style/landing.css">
   <link rel="stylesheet" href="shared/page-components/header/style/header.css">
+  <link rel="stylesheet" href="shared/page-components/footer/style/footer.css">
+
   <title>Online-zoo</title>
 </head>
 <body>
@@ -276,7 +278,7 @@
 @@include('../../shared/page-components/footer/footer.html')
 
 <script>
-  let darkModeCheckbox = document.querySelector(".night-mode__checkbox");
+  let darkModeCheckbox = document.querySelector(".night-mode__input");
 
   darkModeCheckbox.addEventListener('click', e => {
     if (darkModeCheckbox.checked) {

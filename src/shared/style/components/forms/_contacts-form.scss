@@ -1,0 +1,25 @@
+@import "../../abstracts/variables";
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+&__standard-input {
+    margin-bottom: 2rem;
+}
+
+  &__standard-textarea {
+    margin: 0 0 2.5rem 0;
+  }
+
+&__standard-checkbox {
+  margin-bottom: 2.5rem;
+}
+
+  &__form-btn {
+    align-self: flex-end;
+    margin: 0 1.5rem 0 0;
+  }
+
+}
